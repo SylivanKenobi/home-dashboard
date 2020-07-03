@@ -1,0 +1,29 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  <script type='text/javascript'>
+ $(function() {
+   Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":2,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1}]')
+});
+</script>
+
+
+<% content_for :title do %>Hello my friend<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="dog" data-view="BigImage" </div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="far fa-clock icon-background"></i>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="aare" data-view="Aare"></div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="train" data-view="Train" data-title="Abfahrten ab Zollikofen"></div>
+    </li>
+  </ul>
+</div>
