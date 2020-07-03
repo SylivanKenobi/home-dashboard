@@ -6,7 +6,7 @@ require 'time'
 id = "train"
 
 
-SCHEDULER.cron '*/2 5-23 * * *' do
+SCHEDULER.cron '*/5 5-23 * * *' do
   send_event(id, { items: get_timetable })
 end
 
