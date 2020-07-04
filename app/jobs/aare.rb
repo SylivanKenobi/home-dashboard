@@ -1,5 +1,3 @@
-# https://api.srgssr.ch/forecasts/v1.0/weather/7day
-
 require 'net/http'
 require 'json'
 require 'pry'
@@ -7,7 +5,7 @@ require 'pry'
 id = "aare"
 
 
-SCHEDULER.every '10s', :first_in => 0 do |job|
+SCHEDULER.cron '*/5 5-23 * * *' do
   stats = get_stats
   send_event(id, get_stats)
 end
