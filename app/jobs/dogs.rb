@@ -6,18 +6,16 @@ id = "dog"
 
 
 SCHEDULER.every '30s', :first_in => 0 do |job|
-  image_url = JSON.parse(URI.parse("https://dog.ceo/api/breed/#{breed}/images/random").read)['message']
-  send_event(id, { image: image_url })
+  send_event(id, { image: get_doggo_image })
 end
 
-def breeds
-  @breeds ||= get_breeds
-end
+def get_doggo_image
+  uri = URI.parse('https://api.thedogapi.com/v1/images/search')
 
-def get_breeds
-  JSON.parse(URI.parse("https://dog.ceo/api/breeds/list/all").read)
-end
+  request = Net::HTTP::Get.new(uri)
+  request['x-api-key'] = ENV['DOGGO_KEY']
 
-def breed
-  breeds['message'].to_a[rand(breeds['message'].length)][0]
+  response = Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') {|http|
+    http.request(request)
+  }
 end
