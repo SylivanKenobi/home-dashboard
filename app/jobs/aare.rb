@@ -5,7 +5,7 @@ require 'pry'
 id = "aare"
 
 
-SCHEDULER.cron '*/5 5-23 * * *' do
+SCHEDULER.cron '*/5 5-23 * * *', :first_in => 0 do
   stats = get_stats
   send_event(id, get_stats)
 end

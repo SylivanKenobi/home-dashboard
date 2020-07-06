@@ -1,0 +1,11 @@
+---
+valuation: "data: {\"current\":11,\"last\":0,\"id\":\"valuation\",\"updatedAt\":1593776079178}\n\n"
+karma: "data: {\"current\":76156,\"last\":0,\"id\":\"karma\",\"updatedAt\":1593776079178}\n\n"
+synergy: "data: {\"value\":84,\"id\":\"synergy\",\"updatedAt\":1593776079178}\n\n"
+convergence: "data: {\"points\":[{\"x\":4,\"y\":41},{\"x\":5,\"y\":36},{\"x\":6,\"y\":18},{\"x\":7,\"y\":27},{\"x\":8,\"y\":36},{\"x\":9,\"y\":37},{\"x\":10,\"y\":4},{\"x\":11,\"y\":138},{\"x\":12,\"y\":199},{\"x\":13,\"y\":364}],\"id\":\"convergence\",\"updatedAt\":1593776379144}\n\n"
+buzzwords: "data: {\"items\":[{\"label\":\"Exit strategy\",\"value\":1},{\"label\":\"Pivoting\",\"value\":1},{\"label\":\"Streamlininess\",\"value\":1}],\"id\":\"buzzwords\",\"updatedAt\":1593776379154}\n\n"
+businesscat: "data: {\"image\":\"https://placedog.net/500?random\",\"id\":\"businesscat\",\"updatedAt\":1593771045493}\n\n"
+dog: "data: {\"image\":\"https://images.dog.ceo/breeds/finnish-lapphund/mochilamvan.jpg\",\"id\":\"dog\",\"updatedAt\":1593791936637}\n\n"
+aare: "data: {\"temp\":16.4,\"temp_text\":\"Ender früsch\",\"flow\":240,\"flow_text\":\"ender
+  viu\",\"id\":\"aare\",\"updatedAt\":1593791956728}\n\n"
+train: "data: {\"items\":[{\"departure\":\"18:06\",\"vehicle\":\"S31\",\"duration\":14,\"transfers\":3},{\"departure\":\"18:09\",\"vehicle\":\"S8\",\"duration\":15,\"transfers\":3},{\"departure\":\"18:21\",\"vehicle\":\"S3\",\"duration\":15,\"transfers\":3},{\"departure\":\"18:24\",\"vehicle\":\"S8\",\"duration\":15,\"transfers\":3}],\"id\":\"train\",\"updatedAt\":1593791940458}\n\n"
