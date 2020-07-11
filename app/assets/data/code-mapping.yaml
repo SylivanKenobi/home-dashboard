@@ -1,0 +1,300 @@
+1:
+  code_icon: wi-day-sunny
+  short: so
+  long-german: Sonne
+  long-english: sun
+2:
+  code_icon: wi-day-fog
+  short: so_ne
+  long-german: Sonne, Nebel
+  long-english: sun, fog
+3:
+  code_icon: wi-day-cloudy
+  short: so_grhe
+  long-german: Sonne grosse hellgraue Wolke
+  long-english: sun large light grey cloud
+4:
+  code_icon: wi-day-showers
+  short: so_grhe_shra
+  long-german: Sonne, grosse hellgraue Wolke Regenschauer
+  long-english: sun, large light grey cloud Rain showers
+5:
+  code_icon: wi-day-storm-showers
+  short: so_grhe_shra_bl
+  long-german: Sonne, grosse hellgraue Wolke, Regenschauer, Blitz
+  long-english: sun, big light grey cloud, rain shower, lightning
+6:
+  code_icon: wi-day-snow
+  short: so_grhe_shsn
+  long-german: Sonne grosse hellgraue Wolke, Schneeschauer
+  long-english: sun large light grey cloud, snow shower
+7:
+  code_icon: wi-day-snow-thunderstorm
+  short: so_grhe_shsn_bl
+  long-german: Sonne grosse hellgraue Wolke, Schneeschauer, Blitz
+  long-english: sun big light grey cloud, snow shower, lightning
+8:
+  code_icon: wi-day-rain-mix
+  short: so_grhe_shsr
+  long-german: Sonne, grosse hellgraue Wolke, Schneeregenschauer
+  long-english: sun, big light grey cloud, snow showers
+9:
+  code_icon: wi-day-sleet-storm
+  short: so_grhe_shsr_bl
+  long-german: Sonne, grosse hellgraue Wolke, Schneeregenschauer, Blitz
+  long-english: sun, big light grey cloud, snow showers, lightning
+10:
+  code_icon: wi-day-cloudy-high
+  short: so_klhe
+  long-german: Sonne, kleine weisse Wolke
+  long-english: sun, small white cloud
+11:
+  code_icon: wi-day-sprinkle
+  short: so_klhe_shra
+  long-german: Sonne, kleine weisse Wolke, Regenschauer
+  long-english: sun, small white cloud, rain shower
+12:
+  code_icon: wi-day-sleet-storm
+  short: so_klhe_shra_bl
+  long-german: Sonne, kleine weisse Wolke, Regenschauer, Blitz
+  long-english: sun, small white cloud, rain shower, lightning
+13:
+  code_icon: wi-day-snow-wind
+  short: so_klhe_shsn
+  long-german: Sonne, kleine weisse Wolke, Schneeschauer
+  long-english: sun, small white cloud, snow shower
+14:
+  code_icon: wi-day-snow-thunderstorm
+  short: so_klhe_shsn_bl
+  long-german: Sonne, kleine weisse Wolke, Schneeschauer, Blitz
+  long-english: sun, small white cloud, snow shower, lightning
+15:
+  code_icon: wi-day-rain-mix
+  short: so_klhe_shsr
+  long-german: Sonne, kleine weisse Wolke, Schneeregenschauer
+  long-english: sun, small white cloud, snow showers
+16:
+  code_icon: wi-day-sleet-storm
+  short: so_klhe_shsr_bl
+  long-german: Sonner, kleine weisse Wolke, Schneeregenschauer, Blitz
+  long-english: sunny, small white cloud, snow shower, lightning
+17:
+  code_icon: wi-fog
+  short: ne
+  long-german: Nebel
+  long-english: fog
+18:
+  code_icon: wi-cloudy
+  short: grdu
+  long-german: Grosse dunkle Wolke
+  long-english: large dark cloud
+19:
+  code_icon: wi-cloudy
+  short: grhe
+  long-german: Grosse hellgraue Wolke
+  long-english: large light grey cloud
+20:
+  code_icon: wi-showers
+  short: grdu_ra
+  long-german: Grosse dunkle Wolke, Regen
+  long-english: big dark cloud, rain
+21:
+  code_icon: wi-snow
+  short: grdu_sn
+  long-german: Grosse dunkle Wolke, Schnee
+  long-english: big dark cloud, snow
+22:
+  code_icon: wi-rain-mix
+  short: grdu_sr
+  long-german: Grosse dunkle Wolke, Schneeregen
+  long-english: big dark cloud, snow rain
+23:
+  code_icon: wi-rain
+  short: grdu_ra3
+  long-german: Grosse dunkle, starker Regen
+  long-english: big dark, heavy rain
+24:
+  code_icon: wi-snow-wind
+  short: grdu_sn3
+  long-german: Grosse dunkle, starker Schneefall
+  long-english: big dark, heavy snowfall
+25:
+  code_icon: wi-hail
+  short: grdu_shra
+  long-german: Grosse dunkle Wolke, Regenschauer
+  long-english: big dark cloud, rain shower
+26:
+  code_icon: wi-thunderstorm
+  short: grdu_shra_bl
+  long-german: Grosse dunkle Wolke, Regenschauer, Blitz
+  long-english: big dark cloud, rain shower, lightning
+27:
+  code_icon: wi-snow-wind
+  short: grdu_shsn
+  long-german: Grosse dunkle Wolke, Schneeschauer
+  long-english: big dark cloud, snow shower
+28:
+  code_icon: wi-storm-showers
+  short: grdu_shsn_bl
+  long-german: Grosse dunkle Wolke, Schneeschauer, Blitz
+  long-english: big dark cloud, snow showers, lightning
+29:
+  code_icon: wi-rain-mix
+  short: grdu_shsr
+  long-german: Grosse dunkle Wolke, Schneeregenschauer
+  long-english: large dark cloud, snow showers
+30:
+  code_icon: wi-storm-showers
+  short: grdu_shsr_bl
+  long-german: Grosse dunkle Wolke, Schneeregenschauer, Blitz
+  long-english: big dark cloud, snow showers, lightning
+-1:
+  code_icon: wi-night-clear
+  short: mo
+  long-german: Mond
+  long-english: moon
+-2:
+  code_icon: wi-night-fog
+  short: mo_ne
+  long-german: Mond, Nebel
+  long-english: moon, fog
+-3:
+  code_icon: wi-night-alt-cloudy
+  short: mo_grhe
+  long-german: Mond grosse hellgraue Wolke
+  long-english: moon large light grey cloud
+-4:
+  code_icon: wi-night-alt-rain
+  short: mo_grhe_shra
+  long-german: Mond, grosse hellgraue Wolke Regenschauer
+  long-english: moon, big light grey cloud rain showers
+-5:
+  code_icon: wi-night-thunderstorm
+  short: mo_grhe_shra_bl
+  long-german: Mond, grosse hellgraue Wolke, Regenschauer, Blitz
+  long-english: moon, large light grey cloud, rain shower, lightning
+-6:
+  code_icon: wi-night-alt-snow-wind
+  short: mo_grhe_shsn
+  long-german: Mond grosse hellgraue Wolke, Schneeschauer
+  long-english: moon large light grey cloud, snow shower
+-7:
+  code_icon: wi-night-snow-thunderstorm
+  short: mo_grhe_shsn_bl
+  long-german: Mond grosse hellgraue Wolke, Schneeschauer, Blitz
+  long-english: moon big light grey cloud, snow shower, lightning
+-8:
+  code_icon: wi-night-rain-mix
+  short: mo_grhe_shsr
+  long-german: Mond, grosse hellgraue Wolke, Schneeregenschauer
+  long-english: moon, big light grey cloud, snow showers
+-9:
+  code_icon: wi-night-sleet-storm
+  short: mo_grhe_shsr_bl
+  long-german: Mond, grosse hellgraue Wolke, Schneeregenschauer, Blitz
+  long-english: moon, big light grey cloud, snow shower, lightning
+-10:
+  code_icon: wi-night-alt-partly-cloudy
+  short: mo_klhe
+  long-german: Mond, kleine weisse Wolke
+  long-english: moon, small white cloud
+-11:
+  code_icon: wi-night-showers
+  short: mo_klhe_shra
+  long-german: Mond, kleine weisse Wolke, Regenschauer
+  long-english: moon, small white cloud, rain shower
+-12:
+  code_icon: wi-night-alt-storm-showers
+  short: mo_klhe_shra_bl
+  long-german: Mond, kleine weisse Wolke, Regenschauer, Blitz
+  long-english: moon, small white cloud, rain shower, lightning
+-13:
+  code_icon: wi-night-snow
+  short: mo_klhe_shsn
+  long-german: Mond, kleine weisse Wolke, Schneeschauer
+  long-english: moon, small white cloud, snow shower
+-14:
+  code_icon: wi-night-snow-thunderstorm
+  short: mo_klhe_shsn_bl
+  long-german: Mond, kleine weisse Wolke, Schneeschauer, Blitz
+  long-english: moon, small white cloud, snow shower, lightning
+-15:
+  code_icon: wi-night-rain-mix
+  short: mo_klhe_shsr
+  long-german: Mond, kleine weisse Wolke, Schneeregenschauer
+  long-english: moon, small white cloud, snow showers
+-16:
+  code_icon: wi-night-sleet-storm
+  short: mo_klhe_shsr_bl
+  long-german: Mond, kleine weisse Wolke, Schneeregenschauer, Blitz
+  long-english: moon, small white cloud, snow showers, lightning
+-17:
+  code_icon: wi-night-fog
+  short: ne
+  long-german: Nebel
+  long-english: fog
+-18:
+  code_icon: wi-night-cloudy
+  short: grdu
+  long-german: Grosse dunkle Wolke
+  long-english: large dark cloud
+-19:
+  code_icon: wi-night-cloudy
+  short: grhe
+  long-german: Grosse hellgraue Wolke
+  long-english: large light grey cloud
+-20:
+  code_icon: wi-night-showers
+  short: grdu_ra
+  long-german: Grosse dunkle Wolke, Regen
+  long-english: big dark cloud, rain
+-21:
+  code_icon: wi-night-snow
+  short: grdu_sn
+  long-german: Grosse dunkle Wolke, Schnee
+  long-english: big dark cloud, snow
+-22:
+  code_icon: wi-night-rain-mix
+  short: grdu_sr
+  long-german: Grosse dunkle Wolke, Schneeregen
+  long-english: big dark cloud, snow rain
+-23:
+  code_icon: wi-night-rain
+  short: grdu_ra3
+  long-german: Grosse dunkle, starker Regen
+  long-english: big dark, heavy rain
+-24:
+  code_icon: wi-night-snow-wind
+  short: grdu_sn3
+  long-german: Grosse dunkle, starker Schneefall
+  long-english: big dark, heavy snowfall
+-25:
+  code_icon: wi-night-hail
+  short: grdu_shra
+  long-german: Grosse dunkle Wolke, Regenschauer
+  long-english: big dark cloud, rain shower
+-26:
+  code_icon: wi-night-thunderstorm
+  short: grdu_shra_bl
+  long-german: Grosse dunkle Wolke, Regenschauer, Blitz
+  long-english: big dark cloudcode , rain shower, lightning
+-27:
+  code_icon: wi-night-snow-wind
+  short: grdu_shsn
+  long-german: Grosse dunkle Wolke, Schneeschauer
+  long-english: big dark cloud, snow shower
+-28:
+  code_icon: wi-night-storm-showers
+  short: grdu_shsn_bl
+  long-german: Grosse dunkle Wolke, Schneeschauer, Blitz
+  long-english: big dark cloud, snow showers, lightning
+-29:
+  code_icon: wi-night-rain-mix
+  short: grdu_shsr
+  long-german: Grosse dunkle Wolke, Schneeregenschauer
+  long-english: large dark cloud, snow showers
+-30:
+  code_icon: wi-night-storm-showers
+  short: grdu_shsr_bl
+  long-german: Grosse dunkle Wolke, Schneeregenschauer, Blitz
+  long-english: big dark cloud, snow showers, lightning

@@ -5,14 +5,14 @@
   }
   div {
     background-image: url('/assets/wave-06.svg');
-  background-repeat: repeat-x;
-  background-position: 0px 0px;
-  height: 20px;
-  -webkit-animation: animatedBackground 15s linear infinite;
-  animation: animatedBackground 15s linear infinite;
-  bottom: 0;
-  width: 100%;
-  z-index: 0;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    height: 20px;
+    -webkit-animation: animatedBackground 15s linear infinite;
+    animation: animatedBackground 15s linear infinite;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
   }
 }
 @-webkit-keyframes animatedBackground {

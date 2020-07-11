@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td data-foreach-item="items">
+        <img data-bind-src="item.weather_img"/><br>
+        <span data-bind="item.date"></span><br>
+        <span data-bind="item.max_temp"></span>°C /
+        <span data-bind="item.min_temp"></span>°C<br><br>
+        <span data-bind="item.weather_text"></span>
+    </td>
+  </tr>
+  <tr>
+    <td class="updated-row" data-bind="updatedAtMessage" colspan="7"></td>
+  </tr>
+</table>

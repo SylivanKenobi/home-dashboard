@@ -1,11 +1,8 @@
 <script type='text/javascript'>
-$(function() {
-  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  <script type='text/javascript'>
  $(function() {
-   Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":2,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1}]')
-});
-</script>
+   Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":2,"size_y":1},{"col":1,"row":2,"size_x":2,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1}]')
+ });
+ </script>
 
 
 <% content_for :title do %>Hello my friend<% end %>
@@ -14,6 +11,9 @@ $(function() {
   <ul>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="dog" data-view="DogImage"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="weather" data-view="Weather"></div>
     </li>
     <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
       <div data-view="Clock"></div>

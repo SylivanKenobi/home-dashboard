@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  cryptopus:
+    image: thunderguts13/dashboard
+    container_name: dashboard
+    environment:
+      # get api-key: https://thedogapi.com/
+      DOGGO_KEY: change-me
+      # get api-key: https://developer.srgssr.ch/
+      SRG_API_KEY: change-me
+      SRG_API_SECRET: change-me
+    ports:
+      - 3030:3030
