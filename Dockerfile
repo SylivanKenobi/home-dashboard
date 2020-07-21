@@ -1,4 +1,4 @@
-FROM ruby:2.7
+FROM ruby:latest
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1 && apt-get update && apt-get upgrade -yq && apt-get install -yq nodejs

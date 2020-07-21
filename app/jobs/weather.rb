@@ -1,5 +1,3 @@
-# https://api.srgssr.ch/forecasts/v1.0/weather/7day
-
 require 'net/http'
 require 'json'
 require 'pry'
