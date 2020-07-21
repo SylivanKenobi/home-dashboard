@@ -2,6 +2,8 @@ require 'net/http'
 require 'json'
 require 'pry'
 
+require_relative '../../lib/secrets'
+
 id = "dog"
 
 
@@ -12,7 +14,7 @@ end
 def get_doggo_image
   uri = URI.parse('https://api.thedogapi.com/v1/images/search')
   request = Net::HTTP::Get.new(uri)
-  request['x-api-key'] = ENV['DOGGO_KEY']
+  request['x-api-key'] = Secrets.get('DOGGO_KEY')
   response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {|http|
     http.request(request)
   }

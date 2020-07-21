@@ -5,6 +5,8 @@ require 'json'
 require 'pry'
 require 'rest-client'
 
+require_relative '../../lib/secrets'
+
 id = "weather"
 
 SCHEDULER.cron '*/5 5-23 * * *', :first_in => 0 do
@@ -42,7 +44,7 @@ def get_weather_text(code)
 end
 
 def get_token
-  encoded_token = Base64.strict_encode64("#{ENV['SRG_API_KEY']}:#{ENV['SRG_API_SECRET']}")
+  encoded_token = Base64.strict_encode64("#{Secrets.get('SRG_API_KEY')}:#{Secrets.get('SRG_API_SECRET')}")
   token_url = 'https://api.srgssr.ch/oauth/v1/accesstoken?grant_type=client_credentials'
   response = RestClient::Request.execute(
       method: :post, url: token_url, headers: { Authorization: "Basic #{encoded_token}" }
