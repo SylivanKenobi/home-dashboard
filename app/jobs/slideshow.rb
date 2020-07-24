@@ -7,7 +7,7 @@ require_relative '../../lib/secrets'
 id = "slideshow"
 
 
-SCHEDULER.every '15s', :first_in => 0 do
+SCHEDULER.every '15m', :first_in => 0 do
   send_event(id, image: random_image)
 end
 
