@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #12b0c5;
+$background-color:  #019699;
 $value-color:       #fff;
 
 $title-color:       rgba(255, 255, 255, 0.7);
@@ -19,7 +19,7 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   table {
-    height: 100%;
+    height: 50%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -28,10 +28,9 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
       font-size: 18px;
       width: 13%;
       max-width: 13%;
-      outline: 1px solid white;
     }
   }
-  background-color: #38c2f9;
+  background-color: $background-color;
 
   .updated-row {
     color: rgba(0, 0, 0, 0.3);

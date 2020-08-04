@@ -25,8 +25,10 @@ def seven_day_weather
   weather = []
   json['7days'].each do |day|
     weather_code = day['values'][1]['smbd']
+    a = day['formatted_date'].split(".")
+    d = DateTime.new(a[2].to_i, a[1].to_i, a[0].to_i)
     weather << {
-      date: day['formatted_date'],
+      day: d.strftime("%A"),
       min_temp: day['values'][0]['ttn'].to_i,
       max_temp: day['values'][2]['ttx'].to_i,
       weather_img: "assets/weather-symbols/#{weather_code}.png",

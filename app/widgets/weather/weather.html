@@ -2,10 +2,11 @@
   <tr>
     <td data-foreach-item="items">
         <img data-bind-src="item.weather_img"/><br>
-        <span data-bind="item.date"></span><br>
-        <span data-bind="item.max_temp"></span>°C /
-        <span data-bind="item.min_temp"></span>°C<br><br>
-        <span data-bind="item.weather_text"></span>
+        <b>
+        <span data-bind="item.day"></span><br>
+        <span data-bind="item.min_temp"></span>°C /
+        <span data-bind="item.max_temp"></span>°C
+        </b>
     </td>
   </tr>
   <tr>
