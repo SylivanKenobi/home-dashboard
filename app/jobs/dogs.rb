@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 require 'pry'
 
-require_relative '../../lib/secrets'
+require_relative '../lib/secrets'
 
 id = "dog"
 
