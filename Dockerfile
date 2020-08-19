@@ -13,4 +13,4 @@ USER 1001
 
 EXPOSE 3030
 
-CMD ["smashing", "start", "-p", "3030"]
+CMD ["smashing", "start", "-p", "3030", "-e", "production"]
