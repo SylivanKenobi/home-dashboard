@@ -16,4 +16,6 @@ def get_dad_joke
       method: :get, url: 'https://icanhazdadjoke.com/', headers: { Accept: "text/plain" }
     )
   response.body
+rescue
+  "Did you hear about the kidnapping at school? It's ok, he woke up."
 end
