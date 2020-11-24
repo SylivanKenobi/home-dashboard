@@ -10,11 +10,11 @@ configure do
 
   helpers do
     def protected!
+      Encoding.default_external = "UTF-8"
       # Put any authentication code you want in here.
       # This method is run before accessing any resource.
     end
   end
-  Encoding.default_external = "UTF-8"
 end
 
 map Sinatra::Application.assets_prefix do
