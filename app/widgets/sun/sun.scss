@@ -1,0 +1,33 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #fff;
+$value-color:       rgba(0, 0, 0, 0.7);
+
+$title-color:       rgba(0, 0, 0, 0.7);
+$label-color:       rgba(0, 0, 0, 0.7);
+$moreinfo-color:    rgba(0, 0, 0, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-sun {
+
+  background-color: $background-color;
+  vertical-align: top;
+  color: $value-color;
+
+  .texts {
+    display: inline;
+    white-space: nowrap;
+    height: 48pt;
+    font-weight: bold;
+  }
+
+  img {
+    display: inline;
+    width: 48pt;
+    height: 48pt;
+  }
+
+}
