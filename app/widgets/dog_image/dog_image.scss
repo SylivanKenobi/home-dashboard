@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #4b4b4b;
+$background-color:  #FFF541;
 
 // ----------------------------------------------------------------------------
 // Widget-image styles
@@ -9,6 +9,7 @@ $background-color:  #4b4b4b;
 div.widget-dog-image {
     padding: 0;
     background-color: $background-color;
+    color: #0a0a0a;
 
     video {
         width: 65%;
