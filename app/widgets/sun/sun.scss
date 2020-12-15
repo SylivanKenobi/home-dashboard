@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #49EB40;
+$background-color:  #ffffff;
 $value-color:       rgba(0, 0, 0, 0.7);
 
 $title-color:       rgba(0, 0, 0, 0.7);
@@ -17,11 +17,15 @@ $moreinfo-color:    rgba(0, 0, 0, 0.7);
   vertical-align: top;
   color: $value-color;
 
+  .filler {
+    color: $background-color;
+  }
   .texts {
     display: inline;
     white-space: nowrap;
     height: 48pt;
     font-weight: bold;
+    color: $value-color;
   }
 
   img {
