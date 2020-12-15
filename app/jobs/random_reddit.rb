@@ -14,7 +14,7 @@ def get_post
     url = "https://www.reddit.com/r/#{subreddit}/hot.json?limit=100"
 
     response = RestClient::Request.execute(
-        method: :get, url: url, headers: { Authorization: "Bearer #{@bearer_token}" }
+        method: :get, url: url
       )
     json = JSON.parse(response.body)
     if json['data']['children'].count <= 0
