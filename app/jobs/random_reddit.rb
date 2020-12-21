@@ -9,7 +9,7 @@ SCHEDULER.every '15m', :first_in => 0 do
 end
 
 def get_post
-    subreddit = 'itookapicture'
+    subreddit = 'Bikeporn'
     placeholder = '/assets/sunset.png'
     url = "https://www.reddit.com/r/#{subreddit}/hot.json?limit=100"
 
