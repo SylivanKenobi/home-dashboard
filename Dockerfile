@@ -10,9 +10,9 @@ WORKDIR /usr/src/app
 
 COPY app/ .
 
-USER 1001
-
 RUN bundle install
+
+USER 1001
 
 EXPOSE 3030
 
