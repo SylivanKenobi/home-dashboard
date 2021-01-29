@@ -1,4 +1,4 @@
-FROM quay.io/aptible/ruby:2.7-debian-jessie
+FROM quay.io/aptible/ruby:2.7-debian
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1 && \
