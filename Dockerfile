@@ -1,4 +1,4 @@
-FROM quay.io/aptible/ruby:2.7-debian
+FROM registry.puzzle.ch/docker.io/ruby:2.7.2
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1 && \
