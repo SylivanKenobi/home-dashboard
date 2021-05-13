@@ -1,17 +1,17 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #08FFFC;
+$background-color:  none;
 $value-color:       rgba(0, 0, 0, 0.3);
 
 $title-color:       rgba(0, 0, 0, 0.3);
 $label-color:       rgba(0, 0, 0, 0.3);
-$moreinfo-color:    rgba(0, 0, 0, 0.8);
+$moreinfo-color:    white;
 
 // ----------------------------------------------------------------------------
 // Widget-list styles
 // ----------------------------------------------------------------------------
-.widget-weather {
+.widget-week-weather {
 
   img {
     width: 80%;
@@ -21,6 +21,7 @@ $moreinfo-color:    rgba(0, 0, 0, 0.8);
   
 
   table {
+    color: white;
     height: 50%;
     width: 100%;
     margin-left: auto;
@@ -35,7 +36,7 @@ $moreinfo-color:    rgba(0, 0, 0, 0.8);
   background-color: $background-color;
 
   .updated-row {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.767);
     outline: none;
   }
 

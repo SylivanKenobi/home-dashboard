@@ -1,4 +1,4 @@
-class Dashing.Weather extends Dashing.Widget
+class Dashing.WeekWeather extends Dashing.Widget
   ready: ->
     if @get('unordered')
       $(@node).find('ol').remove()

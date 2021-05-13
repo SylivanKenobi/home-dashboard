@@ -5,32 +5,86 @@ require 'rest-client'
 
 require_relative '../lib/secrets'
 
-id = "weather"
+day_id = "day_weather"
+week_id = "week_weather"
+sun_id = "sun"
 
-SCHEDULER.cron '*/5 5-23 * * *', :first_in => 0 do
-  send_event(id, { items: seven_day_weather })
+
+SCHEDULER.cron '5 0 * * *', :first_in => 0 do
+  pp 'get_data'
+  @data = get_data
+  pp 'send data'
+  send_event(week_id, { items: seven_day_weather(@data) })
+  dw = day_weather(@data)
+  send_event(day_id, dw[:weather])
+  send_event(sun_id, dw[:sun])
+  pp 'done'
 end
 
-def seven_day_weather
+SCHEDULER.cron '1 */1 * * *' do
+  pp 'send data'
+  send_event(week_id, { items: seven_day_weather(@data) })
+  dw = day_weather(@data)
+  send_event(day_id, dw[:weather])
+  send_event(sun_id, dw[:sun])
+  pp 'done'
+end
+
+def get_data
   if token_expired?
     @bearer_token = get_token['access_token']
   end
 
   # Location Zollikofen Bahnhof
-  url = 'https://api.srgssr.ch/forecasts/v1.0/weather/7day?latitude=47.001153&longitude=7.462337'
+  url = 'https://api.srgssr.ch/srf-meteo/forecast/46.9962,7.4525'
   response = RestClient::Request.execute(
       method: :get, url: url, headers: { Authorization: "Bearer #{@bearer_token}" }
     )
-  json = JSON.parse(response.body)
+  JSON.parse(response.body)
+end
+
+def day_weather(data)
+  forecast = data['forecast']
+  time_now = Time.now.getlocal('+02:00')
+  hour = forecast['60minutes'].find  do |hour|
+    timestamp = Time.parse(hour['local_date_time'])
+    timestamp.strftime('%H').to_i == time_now.strftime("%H").to_i && timestamp.strftime('%d') == time_now.strftime("%d")
+  end
+  day = forecast['day'].find  do |day|
+    timestamp = Time.parse(day['local_date_time'])
+    timestamp.strftime('%d') == time_now.strftime("%d")
+  end
+  {
+    sun: {
+      sunset: day['SUNSET'].to_s.insert(-3, ':'),
+      sunrise: day['SUNRISE'].to_s.insert(-3, ':'),
+      sunhours: day['SUN_H'].to_s
+    },
+    weather: {
+      max_tmp_day: day['TX_C'],
+      min_tmp_day: day['TN_C'],
+      rain_prob_day: day['PROBPCP_PERCENT'],
+      rain_mm_day: day['RRR_MM'],
+      wind_speed_day: day['FF_KMH'],
+      wind_max_speed_day: day['FX_KMH'],
+      current_temp: hour['TTT_C'],
+      rain_prob_hour: hour['PROBPCP_PERCENT'],
+      rain_mm_hour: hour['RRR_MM'],
+      wind_speed_hour: hour['FF_KMH'],
+      wind_max_speed_hour: hour['FX_KMH']
+    }
+  }
+end
+
+def seven_day_weather(data)
   weather = []
-  json['7days'].each do |day|
-    weather_code = day['values'][1]['smbd']
-    a = day['formatted_date'].split(".")
-    d = DateTime.new(a[2].to_i, a[1].to_i, a[0].to_i)
+  data['forecast']['day'].each do |day|
+    weather_code = day['SYMBOL_CODE']
+    week_day = DateTime.parse(day['local_date_time']).to_date.strftime("%A")
     weather << {
-      day: d.strftime("%A"),
-      min_temp: day['values'][0]['ttn'].to_i,
-      max_temp: day['values'][2]['ttx'].to_i,
+      day: week_day,
+      min_temp: day['TN_C'],
+      max_temp: day['TX_C'],
       weather_img: "assets/weather-symbols/#{weather_code}.png",
       weather_text: get_weather_text(weather_code)
     }

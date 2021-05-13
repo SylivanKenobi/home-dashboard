@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 
 SCHEDULER.every '15m', :first_in => 0 do
-   send_event("picture", image: get_post({itookapicture: 75}))
+   send_event("picture", image: get_post({itookapicture: 75, analog: 75}))
    send_event("bike", image: get_post({Bikeporn: 150, mountainbiking: 150, FixedGearBicycle: 100}))
 end
 

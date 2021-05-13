@@ -7,9 +7,9 @@ require_relative '../lib/secrets'
 
 id = "sun"
 
-SCHEDULER.every '1h', :first_in => 0 do
-  send_event(id, get_sun)
-end
+# SCHEDULER.every '1h', :first_in => 0 do
+#   send_event(id, get_sun)
+# end
 
 def get_sun
   if token_expired?
