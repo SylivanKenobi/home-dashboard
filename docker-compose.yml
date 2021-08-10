@@ -2,7 +2,8 @@ version: '2'
 
 services:
   cryptopus:
-    image: thunderguts13/dashboard
+    # docker build . -t dashboard:latest
+    image: dashboard:latest
     container_name: dashboard
     environment:
       # get api-key: https://thedogapi.com/
