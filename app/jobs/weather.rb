@@ -13,14 +13,18 @@ end
 
 def seven_day_weather
   if token_expired?
+    pp 'hi'
     @bearer_token = get_token['access_token']
+    pp 'ho'
   end
 
   # Location Zollikofen Bahnhof
-  url = 'https://api.srgssr.ch/forecasts/v1.0/weather/7day?latitude=47.001153&longitude=7.462337'
+  url = 'https://api.srgssr.ch/srf-meteo/geolocations?latitude=47.001153&longitude=7.462337'
+  pp 'get'
   response = RestClient::Request.execute(
-      method: :get, url: url, headers: { Authorization: "Bearer #{@bearer_token}" }
-    )
+    method: :get, url: url, headers: { Authorization: "Bearer #{@bearer_token}" }
+  )
+  pp 'gotten'
   json = JSON.parse(response.body)
   weather = []
   json['7days'].each do |day|
