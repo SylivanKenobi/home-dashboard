@@ -1,4 +1,4 @@
-FROM registry.puzzle.ch/docker.io/ruby:2.7.2-slim
+FROM registry.puzzle.ch/docker.io/ruby:2.7-slim
 
 USER root
 
