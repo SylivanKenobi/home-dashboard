@@ -33,7 +33,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     raabro (1.4.0)
-    rack (2.2.6.4)
+    rack (2.2.8.1)
     rack-protection (2.2.3)
       rack
     rest-client (2.1.0)
